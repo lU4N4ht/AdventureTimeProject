@@ -1,8 +1,96 @@
-.body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(./img/OmoriWhiteRoomo.png);
     height: 100vh;
     display: grid;
-    grid-template-rows: 100px 1fr 50px;
-    padding: 70px 70px 24px 70px;
+    grid-template-rows: 80px 1fr 5px;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
     background-size: cover;
-    background-image: url(./img/OmoriWhiteRoom.png);
+}
+.icon{
+    width: 70px;
+}
+.partes{
+    font-size: 25px;
+    transform: translate(-1%,0%);
+    font-family: 'Changa', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    color: rgb(0, 0, 0);
+}
+.logo{
+    width: 400px;
+    transform: translate(120%,-20%);
+}
+.info{
+    text-align:left;
+    transform: translate(0%,25%);
+    font-size: 15px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color:rgb(14, 14, 14);
+    font-family: 'Changa', sans-serif;
+}
+.omori-logo{
+    width: 80px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+.trailer{
+    width: 260px;
+    transform: translate(440%,-250%);
+}
+.subtitulo{
+    position: absolute;
+    font-size: 16px;
+    transform: translate(2600%,-690%);
+}
+.channel{
+    width: 250px;
+    transform: translate(355%,-25%);
+}
+.subtitulo2{
+    position: absolute;
+    font-size: 16px;
+    transform: translate(2000%,-600%);
+}
+.icone{
+    position: absolute;
+    width: 40px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-600%,190%);
+}
+.icone1{
+    position: absolute;
+    width: 40px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-250%,190%);
+   
+}
+.icone2{
+    position: absolute;
+    width: 40px;  
+    top: 65%;
+    left: 50%;
+    transform: translate(150%,190%);
+}
+.icone3{
+    position: absolute;
+    width: 40px;
+    top: 65%;
+    left: 50%;
+    transform: translate(500%,190%);
 }

@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-image:url(./img/OmoriWhiteRoomo.png);
+    background-repeat: no-repeat;
+    background-image:url(./img/OmoriWhiteRoom0.png);
     height: 100vh;
     display: grid;
     grid-template-rows: 80px 1fr 5px;
@@ -26,12 +27,15 @@ body{
     color: rgb(0, 0, 0);
 }
 .logo{
+    position: fixed;
     width: 400px;
-    transform: translate(120%,-20%);
+    top: 65%;
+    left: 50%;
+    transform: translate(15%,-490%);
 }
 .info{
     text-align:left;
-    transform: translate(0%,25%);
+    transform: translate(20%,70%);
     font-size: 15px;
     width: 250px;
     display: flex;
@@ -42,42 +46,42 @@ body{
 }
 .omori-logo{
     width: 80px;
-    position: absolute;
+    position: fixed;
     top: 65%;
     left: 50%;
-    transform: translate(-50%,-100%);
+    transform: translate(-50%,-150%);
 }
 .trailer{
     width: 260px;
-    transform: translate(440%,-250%);
+    transform: translate(480%,-190%);
 }
 .subtitulo{
     position: absolute;
     font-size: 16px;
-    transform: translate(2600%,-690%);
+    transform: translate(2830%,40%);
 }
 .channel{
     width: 250px;
-    transform: translate(355%,-25%);
+    transform: translate(395%,25%);
 }
 .subtitulo2{
     position: absolute;
     font-size: 16px;
-    transform: translate(2000%,-600%);
+    transform: translate(2175%,450%);
 }
 .icone{
     position: absolute;
     width: 40px;
     top: 65%;
     left: 50%;
-    transform: translate(-600%,190%);
+    transform: translate(-600%,230%);
 }
 .icone1{
     position: absolute;
     width: 40px;
     top: 65%;
     left: 50%;
-    transform: translate(-250%,190%);
+    transform: translate(-250%,230%);
    
 }
 .icone2{
@@ -85,12 +89,31 @@ body{
     width: 40px;  
     top: 65%;
     left: 50%;
-    transform: translate(150%,190%);
+    transform: translate(150%,230%);
 }
 .icone3{
     position: absolute;
     width: 40px;
     top: 65%;
     left: 50%;
-    transform: translate(500%,190%);
+    transform: translate(500%,230%);
 }
+#inverter{
+    top: 80%;
+    left: 1%;
+    width: 200px;
+    transform: scaleX(-1);
+    position: fixed;
+   
+}
+.creditos{
+    font-family: 'Changa', sans-serif;
+    font-size: 15px;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,900%);
+
+
+}
+

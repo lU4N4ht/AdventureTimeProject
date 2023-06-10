@@ -2,120 +2,101 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 
 }
 body{
     overflow: hidden;
     background-repeat: no-repeat;
-    background-image:url(./img/OmoriWhiteRoom0.png);
+    background-image: url(./img/wallpaperbg.png);
     height: 100vh;
-    display: grid;
-    grid-template-rows: 80px 1fr 5px;
-    padding: 20px;
-    font-family: 'Lato', sans-serif;
     background-size: cover;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 1em;
+    margin: 2em;
 }
-.icon{
-    width: 70px;
-}
-.partes{
-    font-size: 25px;
-    transform: translate(-1%,0%);
-    font-family: 'Changa', sans-serif;
+header{
+    gap: 10em;
+    position: relative;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 30px;
-    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    justify-content: center;
+    padding-right: 2em;
 }
-.logo{
-    position: absolute;
-    width: 350px;
-    top: 65%;
-    left: 50%;
-    transform: translate(10%,-400%);
-}
-.info{
-    text-align:left;
-    transform: translate(12%,55%);
-    font-size: 15px;
-    width: 250px;
+.navbar{
+    padding-top: 1.5em;
+    color: rgba(30, 30, 30, 0.79);
+    font-weight: bold;
     display: flex;
-    flex-direction: row;
-    gap: 15px;
-    color:rgb(14, 14, 14);
-    font-family: 'Changa', sans-serif;
+    font-size: 20px;
+    gap: 8em;
+    align-items: center;
 }
-.omori-logo{
-    width: 80px;
+ul.navbar > a{
+    color: rgba(30, 30, 30, 0.79);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 1.25em;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+ul.navbar > a:hover{
+    transition: 0.4s all ease;
+    color: #1E1E1E;
+}
+ul.navbar > a::after{
+    content: '';
     position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%,-80%);
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.100em;
+    bottom: -0.3125em;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    background-color: #1E1E1E;
 }
-.trailer{
-    width: 260px;
-    transform: translate(420%,-180%);
+ul.navbar > a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
-.subtitulo{
-    position: absolute;
-    font-size: 16px;
-    transform: translate(2500%,-170%);
+main{
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
-.channel{
-    width: 210px;
-    transform: translate(420%,-5%);
+main .maininfo{
+    width: 18em;
+    font-size: 1.5em;
+    font-weight: 500;
 }
-.subtitulo2{
-    position: absolute;
-    font-size: 16px;
-    transform: translate(1970%,-100%);
+section.info{
+    display: grid;
+    padding-left: 7em;
+    gap: 3em;
 }
-.icone{
-    position: absolute;
-    width: 40px;
-    top: 65%;
-    left: 50%;
-    transform: translate(-600%,330%);
+section.medias{
+    padding-right: 2em;
+    display: grid;
+    gap: 3em;
 }
-.icone1{
-    position: absolute;
-    width: 40px;
-    top: 65%;
-    left: 50%;
-    transform: translate(-250%,330%);
-   
+section.photos{
+    display: flex;
+    gap: 3em;
 }
-.icone2{
-    position: absolute;
-    width: 40px;  
-    top: 65%;
-    left: 50%;
-    transform: translate(150%,330%);
+.links{
+    border-radius: 1em;
+    width: 12em;
+    height: 12em;
 }
-.icone3{
-    position: absolute;
-    width: 40px;
-    top: 65%;
-    left: 50%;
-    transform: translate(500%,330%);
+footer{
+    position: relative;
+    display: flex;
+    color: #270202;
+    font-size: 0.8em;
+    justify-content: center;
 }
-#inverter{
-    top: 85%;
-    left: 1%;
-    width: 130px;
-    transform: scaleX(-1);
-    position: absolute;
-   
-}
-.creditos{
-    font-family: 'Changa', sans-serif;
-    font-size: 15px;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%,700%);
-
-
-}
-
